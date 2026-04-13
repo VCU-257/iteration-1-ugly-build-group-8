@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+
+    /* Base state: background visible, arrow invisible */
+    .custom-control {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.562); 
+      top: 50%;
+      transform: translateY(-50%);
+      transition: background 0.2s ease, opacity 0.2s ease;
+    }
+
+    /* Hide arrows initially */
+    .custom-control .carousel-control-prev-icon,
+    .custom-control .carousel-control-next-icon {
+      opacity: .5;             
+      filter: invert(1);       
+      width: 20px;
+      height: 20px;
+      transition: opacity 0.2s ease;
+    }
+
+    /* Hover state*/
+    .custom-control:hover {
+      background: rgb(255, 255, 255); 
+      border: 1px solid rgba(0,0,0,0.5); 
+    }
+
+    .custom-control:hover .carousel-control-prev-icon,
+    .custom-control:hover .carousel-control-next-icon {
+      opacity: 1; 
+  
+    }
+    .profile-btn:hover {
+      border: 1px solid #000000;                          
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Navbar -->
+  <div class="container py-3 border-bottom" style = "max-width: 100rem;">
+    <div class="d-flex align-items-center justify-content-between">
+
+      <!-- Left circle -->
+      <div class="bg-secondary rounded-circle" style="width:50px;height:50px;"></div>
+
+      <!-- Search -->
+      <input type="text" class="form-control mx-3 w-50" placeholder="Search">
+
+      <!-- Right -->
+      <div class="d-flex gap-2 align-items-center">
+        <button class="btn btn-light">Seller</button>
+        <button class="btn p-0 profile-btn">
+          <img src="profileImage.jpg" class="rounded-circle" style="width:40px; height:40px;">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔹 Popular Carousel -->
+  <div class="container px-4 my-5" style = "max-width: 100rem;">
+    <h2 class="mb-4">Popular</h2>
+
+    <div id="popularCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner px-3">   
+        <div class="carousel-item active">
+          <div class="d-flex gap-3">
+            <div class="card" style="width: 18rem;">
+              <img src="defaultImage.jpg" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">Skarmory ex</h6>
+                <p class="card-text">$620.00</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="defaultImage.jpg" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">Skarmory ex</h6>
+                <p class="card-text">$620.00</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="defaultImage.jpg" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">Skarmory ex</h6>
+                <p class="card-text">$620.00</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="defaultImage.jpg" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">Skarmory ex</h6>
+                <p class="card-text">$620.00</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="defaultImage.jpg" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">Skarmory ex</h6>
+                <p class="card-text">$620.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex gap-3">
+          
+            <div class="card" style="width: 18rem;">
+              <img src="defaultImage.jpg" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">Skarmory ex</h6>
+                <p class="card-text">$620.00</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="defaultImage.jpg" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">Skarmory ex</h6>
+                <p class="card-text">$620.00</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="defaultImage.jpg" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">Skarmory ex</h6>
+                <p class="card-text">$620.00</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="defaultImage.jpg" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">Skarmory ex</h6>
+                <p class="card-text">$620.00</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="defaultImage.jpg" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">Skarmory ex</h6>
+                <p class="card-text">$620.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Controls -->
+      <button class="carousel-control-prev custom-control" type="button" data-bs-target="#popularCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next custom-control" type="button" data-bs-target="#popularCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 🔹 Featured Section -->
+  <div class="container bg-dark text-white py-4 px-4 rounded" style = "max-width: 97rem;">
+    <h3 class="mb-4">Promotions</h3>
+    <div class="container-fluid my-4">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h5>New Arrivals</h5>
+            <div class="row row-cols-2 g-2 mb-3">
+              <div class="col"><img src="defaultImage.jpg" class="img-fluid rounded"></div>
+              <div class="col"><img src="defaultImage.jpg" class="img-fluid rounded"></div>
+              <div class="col"><img src="defaultImage.jpg" class="img-fluid rounded"></div>
+              <div class="col"><img src="defaultImage.jpg" class="img-fluid rounded"></div>
+            </div>
+            <button class="btn">View More</button>
+
+          </div>
+          
+        </div>
+
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h5>Limited Deals</h5>
+            <div class="row row-cols-2 g-2 mb-3">
+              <div class="col"><img src="defaultImage.jpg" class="img-fluid rounded"></div>
+              <div class="col"><img src="defaultImage.jpg" class="img-fluid rounded"></div>
+              <div class="col"><img src="defaultImage.jpg" class="img-fluid rounded"></div>
+              <div class="col"><img src="defaultImage.jpg" class="img-fluid rounded"></div>
+            </div>
+            <button class="btn">View More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
