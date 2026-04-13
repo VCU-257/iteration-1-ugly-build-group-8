@@ -18,4 +18,6 @@ The carousel from Table 4 was the main challenge. I used Bootstrap's Carousel co
 * **What I asked the AI:** "Build a simple ugly prototype of my Product Details and Checkout pages using Bootstrap 5 based on my GA 7 component table."
 * **How it helped & What I learned:** It set up the HTML structure with the right Bootstrap components. I learned how the Carousel uses `data-bs-target` to link controls to the slideshow, and how Input Groups work with `input-group-text`.
 
-## 5. Live Site Link:https://vcu-257.github.io/iteration-1-ugly-build-group-8/
+## 5. Live Site Link
+* **CheckOut**: https://vcu-257.github.io/iteration-1-ugly-build-group-8/CheckOut.html
+* **ProductPage**: https://vcu-257.github.io/iteration-1-ugly-build-group-8/Product%20Page.html
