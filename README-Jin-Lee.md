@@ -20,4 +20,5 @@ Yes, I used an LLM to debug some of my code and give me examples of how to imple
 
 ## 5. Live Site Link
 *Provide the GitHub Pages link to the specific page(s) you built.*
-* **Live URL:** [Insert Link Here]
+* **Live URL:** https://vcu-257.github.io/iteration-1-ugly-build-group-8/
+* https://vcu-257.github.io/iteration-1-ugly-build-group-8/search.html
